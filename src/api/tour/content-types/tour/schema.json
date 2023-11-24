@@ -1,11 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "abouts",
+  "collectionName": "tours",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "About",
-    "description": "Write about yourself and the content you create"
+    "singularName": "tour",
+    "pluralName": "tours",
+    "displayName": "Tour",
+    "description": "Tour description"
   },
   "options": {
     "draftAndPublish": false
