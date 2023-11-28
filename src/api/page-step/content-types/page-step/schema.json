@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_steps",
+  "info": {
+    "singularName": "page-step",
+    "pluralName": "page-steps",
+    "displayName": "Page Step",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "product_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-page.product-page",
+      "inversedBy": "page_steps"
+    }
+  }
+}
