@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_tour_steps",
+  "info": {
+    "singularName": "product-tour-step",
+    "pluralName": "product-tour-steps",
+    "displayName": "Samouczek - Krok"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

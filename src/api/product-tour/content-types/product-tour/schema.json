@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_tours",
+  "info": {
+    "singularName": "product-tour",
+    "pluralName": "product-tours",
+    "displayName": "Samouczek - Strona"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

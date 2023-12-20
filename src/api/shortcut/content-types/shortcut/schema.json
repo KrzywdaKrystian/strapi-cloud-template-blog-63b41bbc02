@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shortcuts",
+  "info": {
+    "singularName": "shortcut",
+    "pluralName": "shortcuts",
+    "displayName": "Shortcuts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "shortcuts_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::shortcuts-category.shortcuts-category",
+      "mappedBy": "shortcuts"
+    }
+  }
+}

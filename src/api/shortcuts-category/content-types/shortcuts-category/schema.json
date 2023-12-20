@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shortcuts_categories",
+  "info": {
+    "singularName": "shortcuts-category",
+    "pluralName": "shortcuts-categories",
+    "displayName": "Shortcuts Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "shortcuts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::shortcut.shortcut",
+      "inversedBy": "shortcuts_categories"
+    }
+  }
+}
