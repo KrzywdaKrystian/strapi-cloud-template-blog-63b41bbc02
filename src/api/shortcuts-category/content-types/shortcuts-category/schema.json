@@ -20,6 +20,14 @@
       "relation": "manyToMany",
       "target": "api::shortcut.shortcut",
       "inversedBy": "shortcuts_categories"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
