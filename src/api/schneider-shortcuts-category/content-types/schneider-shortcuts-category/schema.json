@@ -4,7 +4,8 @@
   "info": {
     "singularName": "schneider-shortcuts-category",
     "pluralName": "schneider-shortcuts-categories",
-    "displayName": "Schneider Shortcuts Categories"
+    "displayName": "Schneider Shortcuts Categories",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,12 +23,6 @@
           "localized": true
         }
       }
-    },
-    "schneider_schortcuts": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::schneider-schortcut.schneider-schortcut",
-      "mappedBy": "schneider_shortcuts_categories"
     }
   }
 }

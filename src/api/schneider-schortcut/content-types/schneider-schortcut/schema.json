@@ -24,12 +24,6 @@
         }
       }
     },
-    "schneider_shortcuts_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::schneider-shortcuts-category.schneider-shortcuts-category",
-      "inversedBy": "schneider_schortcuts"
-    },
     "Description": {
       "pluginOptions": {
         "i18n": {
