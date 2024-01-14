@@ -61,3 +61,5 @@ For general help using Strapi, please refer to [the official Strapi documentatio
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+Update: 14/01/2024
