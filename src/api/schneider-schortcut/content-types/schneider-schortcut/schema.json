@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schneider_schortcuts",
+  "info": {
+    "singularName": "schneider-schortcut",
+    "pluralName": "schneider-schortcuts",
+    "displayName": "Schneider Schortcuts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "schneider_shortcuts_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::schneider-shortcuts-category.schneider-shortcuts-category",
+      "inversedBy": "schneider_schortcuts"
+    },
+    "Description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Link": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    }
+  }
+}

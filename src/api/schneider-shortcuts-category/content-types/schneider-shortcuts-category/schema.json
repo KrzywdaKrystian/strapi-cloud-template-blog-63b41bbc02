@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schneider_shortcuts_categories",
+  "info": {
+    "singularName": "schneider-shortcuts-category",
+    "pluralName": "schneider-shortcuts-categories",
+    "displayName": "Schneider Shortcuts Categories"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "schneider_schortcuts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::schneider-schortcut.schneider-schortcut",
+      "mappedBy": "schneider_shortcuts_categories"
+    }
+  }
+}
