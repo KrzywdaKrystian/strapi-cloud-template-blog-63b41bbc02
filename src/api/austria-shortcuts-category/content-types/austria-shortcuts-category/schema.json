@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "shortcuts_categories",
+  "collectionName": "austria_shortcuts_categories",
   "info": {
-    "singularName": "shortcuts-category",
-    "pluralName": "shortcuts-categories",
-    "displayName": "Shortcuts Category",
+    "singularName": "austria-shortcuts-category",
+    "pluralName": "austria-shortcuts-categories",
+    "displayName": "Austria Shortcuts Category",
     "description": ""
   },
   "options": {
@@ -24,13 +24,7 @@
         }
       }
     },
-    "shortcuts": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::shortcut.shortcut",
-      "inversedBy": "shortcuts_categories"
-    },
-    "image": {
+    "Image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -44,16 +38,20 @@
       }
     },
     "Sort": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      },
-      "type": "integer",
-      "required": true,
-      "unique": false,
-      "default": 0,
-      "min": 1
+      }
+    },
+    "shortcuts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::austria-shortcut.austria-shortcut",
+      "mappedBy": "shortcuts_categories"
     }
   }
 }
