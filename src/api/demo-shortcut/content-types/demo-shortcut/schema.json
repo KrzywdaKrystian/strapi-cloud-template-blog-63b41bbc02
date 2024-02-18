@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "demo_shortcuts",
+  "info": {
+    "singularName": "demo-shortcut",
+    "pluralName": "demo-shortcuts",
+    "displayName": "Demo Shortcut"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "Link": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "shortcuts_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::demo-shortcuts-category.demo-shortcuts-category",
+      "inversedBy": "shortcuts"
+    }
+  }
+}
