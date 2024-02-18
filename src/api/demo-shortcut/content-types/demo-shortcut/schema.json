@@ -4,7 +4,8 @@
   "info": {
     "singularName": "demo-shortcut",
     "pluralName": "demo-shortcuts",
-    "displayName": "Demo Shortcut"
+    "displayName": "Demo Shortcut",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,14 +25,15 @@
       "type": "string"
     },
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     },
