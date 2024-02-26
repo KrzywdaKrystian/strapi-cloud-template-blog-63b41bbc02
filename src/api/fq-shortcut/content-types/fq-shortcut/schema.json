@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fq_shortcuts",
+  "info": {
+    "singularName": "fq-shortcut",
+    "pluralName": "fq-shortcuts",
+    "displayName": "Fq Shortcut"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Sort": {
+      "type": "integer"
+    },
+    "shortcuts_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::fq-shortcuts-category.fq-shortcuts-category",
+      "inversedBy": "shortcuts"
+    }
+  }
+}

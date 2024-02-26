@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fq_shortcuts_categories",
+  "info": {
+    "singularName": "fq-shortcuts-category",
+    "pluralName": "fq-shortcuts-categories",
+    "displayName": "Fq Shortcuts Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Sort": {
+      "type": "integer"
+    },
+    "shortcuts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::fq-shortcut.fq-shortcut",
+      "mappedBy": "shortcuts_categories"
+    }
+  }
+}
